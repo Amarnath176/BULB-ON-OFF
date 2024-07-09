@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title> JS BULB</title>
+    <style>
+        body{
+            background-image: url("https://t4.ftcdn.net/jpg/02/88/30/37/360_F_288303771_nSw2qT6hPKIRxkrLh0d2gx1jLoiAjplM.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    
+    <center>
+        <img id="MYIMAGE" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+    </center>
+    
+ <h1 style="color:rgb(218, 4, 189);">ABOUT BULB:</h1>
+ <h3><i><p style="color:rgb(20, 241, 12)">==>A light-bulb produces light from electricity.In addition to lighting a dark space, they can be used to show an electronic device is on, to direct traffic, for heat, and for many other purposes. Billions are in use, some even in outer space.
+
+    <br>==>Early people used candles and oil lamps for light. Humphry Davy invented the electric arclight in the early 1800s. Thomas Alva Edison, Joseph Swann, and several others in the 1880s invented the more efficient incandescent lightbulb.
+    
+    <br>==>Improved vacuum pumps and better materials made them shine longer and brighter late in the century.. This became the main kind for the 20th century. Electric power stations brought electricity to urban and later rural areas to power them.[2] Later gas discharge lights, including fluorescent lights, use less electricity to make more light.</p></i></h3>   
+<p><h2 style="color:aqua">Types of Bulbs:</h2></p>
+<h3 style="color:rgb(251, 255, 0)">
+ <ul type="i">
+   <li>Incandescent</li>
+   <li> Light-Emitting Diode (LED) Bulbs</li>
+   <li> Compact Fluorescent (CFL) Bulbs</li>
+   <li>Sodium Vapor Lamps</li>
+</h3>
+<script>
+    function changeImage(){
+    var image=document.getElementById('MYIMAGE');
+    if (image.src.match("bulbon")){
+        image.src="pic_bulboff.gif";
+    }
+    else {
+         
+        image.src = "pic_bulbon.gif";
+ }
+}
+</script>
+</body>
+</html>
